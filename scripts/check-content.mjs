@@ -92,9 +92,17 @@ export async function findRepositoryRoot(start = process.cwd()) {
   let candidate = path.resolve(start);
 
   for (;;) {
+    const repositoryMarkers = [
+      "course.config.json",
+      "course.config.schema.json",
+      "schedule.schema.json",
+    ];
     if (
-      (await pathExists(path.join(candidate, "course.config.json"))) &&
-      (await pathExists(path.join(candidate, "AGENTS.md")))
+      (
+        await Promise.all(
+          repositoryMarkers.map((name) => pathExists(path.join(candidate, name))),
+        )
+      ).every(Boolean)
     ) {
       return candidate;
     }
