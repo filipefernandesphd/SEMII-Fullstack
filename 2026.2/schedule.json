@@ -1,0 +1,17 @@
+{
+  "$schema": "../schedule.schema.json",
+  "schemaVersion": 1,
+  "semester": "2026.2",
+  "source": {
+    "tab": "Program"
+  },
+  "entries": [
+    {
+      "day": "",
+      "date": "07/08/2026",
+      "module": "MD0: Apresentação da Disciplina",
+      "topic": "Apresentação da Disciplina",
+      "id": "aula-00"
+    }
+  ]
+}
