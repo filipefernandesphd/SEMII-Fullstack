@@ -15,10 +15,10 @@ export interface AcademicPresentation {
 
 export const academicConfig = {
   courseName: 'Especialização em Desenvolvimento Fullstack - EAD',
-  subjectName: 'Engenharia de Software',
-  subjectAcronym: 'ESW',
-  subjectCode: 'DFS03007',
-  professorName: 'Prof. Filipe Fernandes, PhD',
+  subjectName: 'Seminários II',
+  subjectAcronym: 'SEMII',
+  subjectCode: 'DFS03011',
+  professorName: 'Filipe Fernandes, PhD',
   professorContact: 'filipe.fernandes@ifsudestemg.edu.br',
   presentationTitle: 'Apresentação da Disciplina',
 } satisfies AcademicPresentation
